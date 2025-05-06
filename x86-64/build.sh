@@ -40,6 +40,9 @@ PACKAGES="$PACKAGES openssh-sftp-server"
 PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
+# 增加Alist插件
+PACKAGES="$PACKAGES luci-app-alist"             # Alist 主插件
+PACKAGES="$PACKAGES luci-i18n-alist-zh-cn"      # Alist 中文支持
 
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
